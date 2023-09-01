@@ -1,5 +1,15 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header_menu {
+    background-color: $moss-green;
+    width: 36.4px;
+    height: 36.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    &-link {
+        &-icon{
+            width: 13.5px;
+            height: 11.8px;
+        } 
+    }
 }

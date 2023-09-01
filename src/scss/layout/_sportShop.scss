@@ -1,0 +1,17 @@
+.sport{
+    &_text{
+        &_h3{
+            @include textStyle($moss-green, $text, 1.4rem, 3rem);
+            font-weight: lighter;
+        }
+        &_h2{
+
+        }
+        &_par{
+
+        }
+        &_button{
+
+        }
+    }
+}

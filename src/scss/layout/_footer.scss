@@ -1,0 +1,45 @@
+.footer{
+    background-color: $greyishBrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &_div{
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: $white;
+        border-radius: 50%;
+        box-shadow: 0 0.4rem 0.4rem 0 $shadow2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+        z-index: 1;
+        &_button{
+            &_img{
+                width: 2.06rem;
+                height: 2.4rem;
+            }
+        }
+    }
+    &_block {
+        @include textStyle($white, $text, 1.6rem, 3rem);
+        text-transform: uppercase;
+        &_ul{
+            list-style: none;
+            padding-bottom: 2.79rem;
+        }
+    }
+    &_copyright{
+        @include textStyle($white, $text, 1.4rem, 3rem);
+        &_par {
+            @include textStyle($white, $text, 1.4rem, 3rem);
+            &_heart{
+                color: $mossGreen;
+            }
+            padding-bottom: 3.35rem;
+        }
+    }
+    
+}

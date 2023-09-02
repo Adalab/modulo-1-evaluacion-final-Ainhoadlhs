@@ -1,17 +1,32 @@
 .sport{
+    padding: 3.4rem 1.7rem 2.8rem 1.3rem;
     &_text{
         &_h3{
-            @include textStyle($moss-green, $text, 1.4rem, 3rem);
+            @include textStyle($mossGreen, $text, 1.4rem, 3rem);
             font-weight: lighter;
+            text-transform: uppercase;
         }
         &_h2{
-
+            @include textStyle($black, $title, 2.2rem, 3rem);
+            text-transform: uppercase;
         }
         &_par{
-
+            @include textStyle($greyishBrown, $text, 1.8rem, 3rem);
+            padding-top: 1rem;
+            padding-bottom: 4.2rem;
         }
         &_button{
-
+            width: 16rem;
+            height: 4.5rem;
+            border: solid 0.2rem $mossGreen;
+            border-radius: 2.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_shop{
+                @include textStyle($mossGreen, $text, 2rem, 4.5rem);
+                text-decoration: none;
+            }
         }
     }
 }

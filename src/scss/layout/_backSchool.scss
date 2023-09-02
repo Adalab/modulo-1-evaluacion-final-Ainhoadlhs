@@ -1,0 +1,43 @@
+.school{
+    background-color: $lightGrey;
+    text-align: center;
+    padding: 1.8rem 1.1rem 3.07rem 1.2rem;
+    &_h4{
+        @include textStyle($brownishGrey, $title, 1.2rem, 3rem);
+        height: 2.21rem;
+    }
+    &_h3{
+        @include textStyle($black, $title, 2rem, 3rem);
+        text-transform: uppercase;
+        padding-bottom: 1.14rem;
+    }
+    &_div{
+        display: grid;
+        grid-template-areas: 'oneimg' 'onepar' 'twoimg' 'twopar' 'threeimg' 'threepar';
+        &_list{
+            padding-bottom: 0.95rem;
+            list-style: none;
+            &_img{
+                width: 11.4rem;
+                height: 12.41rem;
+                border-radius: 50%;
+                box-shadow: 0 0.4rem 0.4rem 0 $shadow2;
+            }
+            &_par{
+                @include textStyle($black, $title, 1.4rem, 3rem);
+            }
+        }
+    }
+    &_button{
+        width: 18.4rem;
+        height: 4.73rem;
+        border-radius: 2.25rem;
+        background-color: $mossGreen;
+        margin-left: auto;
+        margin-right: auto;
+        &_link{
+            @include textStyle($white, $text, 2rem, 4.5rem);
+            text-decoration: none;
+        }
+    }
+}

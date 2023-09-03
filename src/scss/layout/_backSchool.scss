@@ -2,6 +2,13 @@
     background-color: $lightGrey;
     text-align: center;
     padding: 1.8rem 1.1rem 3.07rem 1.2rem;
+    @media all and(min-width:768px){
+        padding-top: 2.7rem;
+        padding-bottom: 5rem;
+    }
+    @media all and(min-width:1200px){
+        padding-bottom: 4.8rem;
+    }
     &_h4{
         @include textStyle($brownishGrey, $title, 1.2rem, 3rem);
         height: 2.21rem;
@@ -10,10 +17,27 @@
         @include textStyle($black, $title, 2rem, 3rem);
         text-transform: uppercase;
         padding-bottom: 1.14rem;
+        @media all and(min-width:768px){
+            font-size: 2.8rem;
+            padding-top: 1rem;
+            padding-bottom: 2.2rem;
+        }
+        @media all and(min-width:1200px){
+            padding-bottom: 2.5rem;
+        }
     }
     &_div{
         display: grid;
         grid-template-areas: 'oneimg' 'onepar' 'twoimg' 'twopar' 'threeimg' 'threepar';
+        @media all and(min-width:768px){
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'oneimg twoimg threeimg' 'onepar twopar threepar';
+        }
+        @media all and(min-width:1200px){
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-inline: 17.2rem;
+            column-gap: 2.8rem;
+        }
         &_list{
             padding-bottom: 0.95rem;
             list-style: none;
@@ -25,6 +49,10 @@
             }
             &_par{
                 @include textStyle($black, $title, 1.4rem, 3rem);
+                @media all and(min-width:768px){
+                    font-size: 1.8rem;
+                    padding-bottom: 1.35rem;
+                }
             }
         }
     }

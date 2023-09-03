@@ -40,6 +40,23 @@
             }
         }
     }
+        &_block {
+        text-transform: uppercase;
+        &_ul{
+            list-style: none;
+            padding-bottom: 2.79rem;
+            &_link{
+                @include textStyle($white, $text, 1.6rem, 3rem);
+                text-decoration: none;
+                &:visited{
+                    color: $white;
+                }
+                &:hover{
+                    color: $mossGreen;
+                }
+            }
+        }
+    }
     &_copyright{
         @include textStyle($white, $text, 1.4rem, 3rem);
         &_par {
@@ -51,4 +68,11 @@
         }
     }
     
+}
+
+@media all and(min-width:768px){
+        
+}
+@media all and(min-width:1200px){
+
 }

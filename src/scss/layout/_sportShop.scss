@@ -1,19 +1,34 @@
 .sport{
     padding: 3.4rem 1.7rem 2.8rem 1.3rem;
+    @media all and(min-width:768px){
+        padding: 3.73rem 3.91rem 6.15rem 3.71rem;
+    }
+    @media all and(min-width:1200px){
+        padding: 3.9rem 16.8rem 5.9rem 17rem;
+    }
     &_text{
         &_h3{
             @include textStyle($mossGreen, $text, 1.4rem, 3rem);
             font-weight: lighter;
             text-transform: uppercase;
+            @media all and(min-width:768px){
+                font-size: 1.6rem;
+            }
         }
         &_h2{
             @include textStyle($black, $title, 2.2rem, 3rem);
             text-transform: uppercase;
+            @media all and(min-width:768px){
+                font-size: 3.2rem;
+            }
         }
         &_par{
             @include textStyle($greyishBrown, $text, 1.8rem, 3rem);
             padding-top: 1rem;
             padding-bottom: 4.2rem;
+            @media all and(min-width:768px){
+                font-size: 2rem;
+            }
         }
         &_button{
             width: 16rem;
@@ -26,6 +41,9 @@
             &_shop{
                 @include textStyle($mossGreen, $text, 2rem, 4.5rem);
                 text-decoration: none;
+                @media all and(min-width:768px){
+                    font-size: 2rem;
+                }
             }
         }
     }

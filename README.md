@@ -1,5 +1,7 @@
 # Ejercicio de Evaluación final del Módulo 1 de Adalab
 
+## Criterios a seguir
+
 En este ejericicio se nos pedía replicar una página web de acuerdo a un diseño dado y teniendo en cuenta las siguientes pautas:
 
 - El botón de hamburguesa (en la esquina superior izquierda) debe estar fijo en la parte superior de la pantalla y no debe desaparecer al hacer scroll. El icono de la hamburguesa debe ser un enlace a la página de Adalab. Este menú de hamburguesa no desplega ningún submenú.
@@ -24,5 +26,18 @@ En este ejericicio se nos pedía replicar una página web de acuerdo a un diseñ
 
   - Incluí también la misma pequeña animación en el botón del hero, ambas para evidenciar que al clicar sobre ellas nos harán un scroll suave.
  
-# Ejercicio realizado por: 
+
+## Resumen de mi trabajo
+
+He seguido todas las instrucciones arriba mencionadas para lograr una página web como los dinseños que nos han facilitado por Zeplin.
+- Head: Añadido un pequeño balón de futbol que aparece al lado del nombre de la web.
+- Header: Hamburguesa fija en la esquina superior izquierda. Al hacer click redirecciona a la página de Adalab.
+- Hero: Imagen de fondo añadida al css que ocupa todo el alto de la ventana del navegador. El icono de la flecha te lleva, con un scroll suave, a la sección "Vuelta al cole". Maquetado con flexbox.
+- Tienda de deporte:  Maquetado con flex el botón de "Comprar", añadido tambien al botón un :hover un transform a escala 1.5 y una transición de color rosa.
+- Vuelta al cole: Maquetado con Grid. El botón de "Empezar ahora" tiene también un :hover transform a escala 1.5 y una transición de color a negro.
+- Footer: Maquetado con flexbox. El icono de la flecha tiene una animación que desliza la flecha hacia arriba. Al clickar en ella nos lleva con un  scroll suave a la sección de Hero. 
+
+Toda la página es responsive, pudiendose visualizar en versión movil, tablet y ordenador.
+ 
+### Ejercicio realizado por: 
 [![Autor](https://img.shields.io/badge/-Ainhoa_de_las_Heras-pink?style=flat-square&logo=github&labelColor=grey&color=fd7ca6)](https://github.com/Ainhoadlhs)

@@ -66,6 +66,10 @@
         &_link{
             @include textStyle($white, $text, 2rem, 4.5rem);
             text-decoration: none;
+            &:hover{
+                transform: scale(1.5);
+            }
         }
+
     }
 }

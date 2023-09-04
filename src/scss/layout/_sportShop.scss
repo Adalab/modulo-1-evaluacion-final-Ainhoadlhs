@@ -38,13 +38,38 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation-name: shopbutton;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
             &_shop{
                 @include textStyle($mossGreen, $text, 2rem, 4.5rem);
                 text-decoration: none;
+                animation-name: shopletter;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                &:hover{
+                    transform: scale(1.5);
                 @media all and(min-width:768px){
                     font-size: 2rem;
                 }
             }
         }
     }
+}
+@keyframes shopbutton {
+    50% {
+        background-color: $mossGreen
+    }
+    100% {
+        background-color: $white ;
+    }
+}
+@keyframes shopletter {
+    50% {
+        color: $white;
+    }
+    100% {
+        color: $mossGreen;
+    }
+}
 }

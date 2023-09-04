@@ -1,17 +1,20 @@
 .hero{
     height: 100vh;
-    background-image: url('/assets/images/cover.jpeg');
+    background-image: url('./assets/images/cover.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 85%;
     text-align: center;
-    padding: 42rem 4.25rem 5.79rem 3.42rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5rem;
     @media all and(min-width:768px){
         background-position: 63%;
-        padding: 42rem 3.61rem 2.52rem 4.32rem;
+        padding-bottom: 2rem;
     }
     @media all and(min-width:1200px){
-        padding: 30rem 36.65rem 5.4rem 34.67rem;  
+        padding-bottom: 6rem;  
     }
     &_text {
         display: flex;
@@ -26,7 +29,8 @@
                 line-height: 10rem;
             }
             @media all and(min-width:1200px){
-                padding-top: 10rem;
+                padding-left: 37rem;
+                padding-right: 34rem;
             }
         }
         &_par{

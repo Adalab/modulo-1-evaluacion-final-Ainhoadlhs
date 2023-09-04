@@ -18,8 +18,6 @@ En este ejericicio se nos pedía replicar una página web de acuerdo a un diseñ
 
 - El botón de flecha del footer debe enlazar al inicio de la página.
 
-  - Para resolver tanto en este caso como en el anterior, añadí un scroll suave al html para que la experiencia de usuario sea más agradable.
-
 - En el hover de los botones ("Comprar" y "Empezar ahora") se debe incluir una transición que dejamos a vuestra elección (por ejemplo: color, tamaño, etc.).
 
 - BONUS: hacer una pequeña animación en el botón del footer.

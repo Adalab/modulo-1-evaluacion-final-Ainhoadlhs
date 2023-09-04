@@ -63,13 +63,17 @@
         background-color: $mossGreen;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &_link{
             @include textStyle($white, $text, 2rem, 4.5rem);
             text-decoration: none;
+            transition: color;
             &:hover{
-                transform: scale(1.5);
+                transform: scale(1.2);
+                color: $black;
             }
         }
-
     }
 }

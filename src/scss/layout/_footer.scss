@@ -17,6 +17,9 @@
         align-items: center;
         transform: translateY(-50%);
         z-index: 1;
+        animation-name: button ;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
         &_button{
             &_img{
                 width: 2.06rem;
@@ -27,6 +30,7 @@
     &_section{
         display: flex;
         flex-direction: column;
+        padding-top: 0.5rem;
         @media all and(min-width:768px){        
         flex-direction: row;
         gap: 15rem;
@@ -55,8 +59,10 @@
                 }
             }
         }
-        &_copy{   
-            order: -2;
+        &_copy{
+            @media all and(min-width:768px){
+                order: -2;
+            }
             &_par{
                 @include textStyle($white, $text, 1.4rem, 3rem);
                 &_heart{
@@ -68,7 +74,11 @@
 }
 
 
-
-@media all and(min-width:1200px){
-
+@keyframes button {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: (360deg);
+    }
 }

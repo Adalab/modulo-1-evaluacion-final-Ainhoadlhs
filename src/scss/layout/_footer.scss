@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 3.35rem;
     &_div{
         width: 4.5rem;
         height: 4.5rem;
@@ -23,56 +24,51 @@
             }
         }
     }
-    &_block {
-        text-transform: uppercase;
-        &_ul{
-            list-style: none;
-            padding-bottom: 2.79rem;
-            &_link{
-                @include textStyle($white, $text, 1.6rem, 3rem);
-                text-decoration: none;
-                &:visited{
-                    color: $white;
-                }
-                &:hover{
-                    color: $mossGreen;
-                }
-            }
+    &_section{
+        display: flex;
+        flex-direction: column;
+        @media all and(min-width:768px){        
+        flex-direction: row;
+        gap: 15rem;
         }
-    }
+        @media all and(min-width:1200px){
+        gap: 30rem;
+        }
         &_block {
-        text-transform: uppercase;
-        &_ul{
-            list-style: none;
-            padding-bottom: 2.79rem;
-            &_link{
-                @include textStyle($white, $text, 1.6rem, 3rem);
-                text-decoration: none;
-                &:visited{
-                    color: $white;
+            text-transform: uppercase;
+            &_ul{
+                list-style: none;
+                padding-bottom: 2.79rem;
+                text-align: center;
+                @media all and(min-width:768px){
+                    text-align: left;
                 }
-                &:hover{
+                &_link{
+                    @include textStyle($white, $text, 1.6rem, 3rem);
+                    text-decoration: none;
+                    &:visited{
+                        color: $white;
+                    }
+                    &:hover{
+                        color: $mossGreen;
+                    }
+                }
+            }
+        }
+        &_copy{   
+            order: -2;
+            &_par{
+                @include textStyle($white, $text, 1.4rem, 3rem);
+                &_heart{
                     color: $mossGreen;
                 }
             }
         }
     }
-    &_copyright{
-        @include textStyle($white, $text, 1.4rem, 3rem);
-        &_par {
-            @include textStyle($white, $text, 1.4rem, 3rem);
-            &_heart{
-                color: $mossGreen;
-            }
-            padding-bottom: 3.35rem;
-        }
-    }
-    
 }
 
-@media all and(min-width:768px){
-        
-}
+
+
 @media all and(min-width:1200px){
 
 }

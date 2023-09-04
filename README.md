@@ -24,9 +24,6 @@ En este ejericicio se nos pedía replicar una página web de acuerdo a un diseñ
 
 - BONUS: hacer una pequeña animación en el botón del footer.
 
-  - Incluí también la misma pequeña animación en el botón del hero, ambas para evidenciar que al clicar sobre ellas nos harán un scroll suave.
- 
-
 ## Resumen de mi trabajo
 
 He seguido todas las instrucciones arriba mencionadas para lograr una página web como los dinseños que nos han facilitado por Zeplin.
